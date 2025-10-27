@@ -2,7 +2,7 @@ const nodeMailer = require('nodemailer');
 const {GMAIL_EMAIL,GMAIL_PASS}=require('./server-config');
 
 const mailsender=nodeMailer.createTransport({
-      host: 'smtp.gmail.com',
+    host: 'smtp.gmail.com',
     port: 465,
     secure: true,
     service:'gmail',
@@ -12,4 +12,4 @@ const mailsender=nodeMailer.createTransport({
     }
 })
 
-module.exports={mailsender};
+module.exports={mailsender}; 
